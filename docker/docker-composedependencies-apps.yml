@@ -13,9 +13,7 @@ services:
       - middleware-network
     environment:
       - SERVER_PORT=8090
-      - MONGO_URI=mongodb://admin:123456@mongo:27017
-      - MONGO_INITDB_DATABASE=common
-
+      - MONGO_URI=mongodb://admin:123456@mongo:27017/common
 
 networks:
      middleware-network:
