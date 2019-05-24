@@ -142,7 +142,7 @@ mvn test
 
 * O teste com selenium webDriver está incluso nessa massa de testes, no processo somos redirecionados ao site do google, onde é inserido a busca pelo nome do autor e filme que retiramos do mongo, na sequência é extraido a quantidade de resultados relativos ao assunto... 
 
-Obs: Aconselho para execução dos testes utiliza o windows, pois fiz voltado para esse S.O devido não saber a stack de escolhar do avaliador.
+Obs: Aconselho para execução dos testes utilizar o windows, pois fiz voltado para esse S.O devido não saber a stack de escolha do avaliador.
 
 Ou ainda quando no eclipse, clicando com o botão direito no package da aplicação > Run As> JUnit Test
 
