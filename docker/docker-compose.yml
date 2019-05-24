@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  
+  mongo:
+    extends:
+      file: docker-compose-dependencies-base.yml
+      service: mongo
+      
+  mongo-express:
+    extends:
+      file: docker-compose-dependencies-base.yml
+      service: mongo-express
+    depends_on:
+      - mongo
+      
+  fox-api:
+    extends:
+      file: docker-composedependencies-apps.yml
+      service: fox-api
+    depends_on:
+      - mongo-express
+
+networks:
+     middleware-network:
+          driver: bridge

@@ -1,0 +1,12 @@
+br/com/fox/resource/DirectorRestController.class
+br/com/fox/entity/DirectorEntity.class
+br/com/fox/config/WebConfig$1.class
+br/com/fox/entity/FilmEntity.class
+br/com/fox/config/SecurityConfig.class
+br/com/fox/model/DirectorModel.class
+br/com/fox/config/SwaggerConfig.class
+br/com/fox/repository/DirectorRepository.class
+br/com/fox/service/DirectorService.class
+br/com/fox/service/DirectorServiceImpl.class
+br/com/fox/Application.class
+br/com/fox/config/WebConfig.class

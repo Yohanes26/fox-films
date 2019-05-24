@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  fox-api:
+    build:
+      context: docker-api
+    container_name: fox-api
+    volumes:
+      - ./var/log:/var/log
+    ports:
+      - "8090:8090"
+    networks:
+      - middleware-network
+    environment:
+      - SERVER_PORT=8090
+      - MONGO_URI=mongodb://admin:123456@mongo:27017
+      - MONGO_INITDB_DATABASE=common
+
+
+networks:
+     middleware-network:
+          driver: bridge
